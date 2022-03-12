@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do bicho</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/pagina.css">
+    <!--<link rel="shortcut icon" href="{% static 'imgs/icon.ico'%}" type="image/x-icon">-->
+</head>
+<body>
+    <header>
+        <div id="box">
+            <nav>
+                <ul>
+                    <li><a href="{% url 'index'%}"><h1>Home</h1></a></li>
+                    <li><a href="{% url 'dashboard'%}">Deposito</a></li>
+                    <li><a href="{% url 'logout'%}">Logout</a></li>
+                    <li><a href="{% url 'cria_produto'%}">Como Funciona</a></li>
+                    <!--{%else%}
+                    <li><a href="{% url 'index'%}"><h1>FutStore</h1></a></li>
+                    <li><a href="{% url 'login'%}">Login</a></li>
+                    <li><a href="{% url 'cadastro'%}">Cadastro</a></li>
+                    {%endif%}-->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <ul class="animais">
+            <!--<li><img src="{% static 'imgs/camisas/palmeiras-i-frente.jpg'%}" alt="Camisa I do Palmeiras na temporada 2021">
+                <h2>Palmeiras - Camisa I</h2>
+                <p>R$ 279.99</p></li>
+            <li><img src="{% static 'imgs/camisas/flamengo-i-frente.jpg'%}" alt="Camisa I do Flamengo na temporada 2021">
+                <h2>Flamengo - Camisa I</h2>
+                <p>R$ 289.99</p></li>
+            <li><img src="{% static 'imgs/camisas/atleticomg-i-frente.jpg'%}" alt="Camisa I do Atletico Mineiro na temporada 2021">
+                <h2>Atletico MG - Camisa I</h2>
+                <p>R$ 299.99</p></li>
+            <li><img src="{% static 'imgs/camisas/santos-i-frente.jpg'%}" alt="Camisa I do Santos na temporada 2021'%}">
+                <h2>Santos - Camisa I</h2>
+                <p>R$ 209.99</p></li>-->
+            <li>
+                <img src="img/animais/1 - Avestruz.png">
+                <h2>Avestruz</h2>
+            </li>
+            <li>
+                <img src="img/animais/2 - Aguia.png">
+                <h2>Aguia</h2>
+            </li>
+            <li>
+                <img src="img/animais/3 - Burro.png">
+                <h2>Burro</h2>
+            </li>
+            <li>
+                <img src="img/animais/4 - Borboleta.png">
+                <h2>Borboleta</h2>
+            </li>
+            <li>
+                <img src="img/animais/5 - Cachorro.png">
+                <h2>Cachorro</h2>
+            </li>
+            <li>
+                <img src="img/animais/6 - Cabra.png">
+                <h2>Cabra</h2>
+            </li>
+            <!--{% if times %}
+            {% for time in times %}
+            <a href="{% url 'produto' time.id%}"><li>
+                {% if time.foto_produto != '' %}
+                    <img src="{{time.foto_produto.url}}">
+                {%endif%}
+                <h2>{{ time.nome_produto }}</h2>
+                <p>R$ {{time.produto_preco}}</p></li></a>
+            {% endfor %}
+            {% else %}
+            {% endif %}-->
+        </ul>
+    </main>
+</body>
+</html>

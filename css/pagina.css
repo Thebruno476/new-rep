@@ -1,0 +1,151 @@
+header {
+    background-color: #c0c0c0;
+    padding: 20px 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	color: #000000;
+}
+
+nav li:hover {
+    color: #ffd700;
+    text-decoration: underline;
+}
+.animais li h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000000;
+}
+.animais li h2:hover{
+	color: #ffd700;
+    text-decoration: underline;
+}
+.animais img{
+    width: 100px;
+	padding: 30px 0;
+}
+
+.animais {
+	padding: 50px 0px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.animais li{
+	display: inline-block;
+	text-align: center;
+	width:  16%;
+	vertical-align: top;
+	margin: 10px 1.5%;
+	padding: 30px 20px;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 15px;
+}
+
+li p {
+	color: #f00;
+	font-weight: bold;
+	padding: 10px 0;
+}
+
+footer {
+	text-align: center;
+	background-color: black;
+	width: auto;
+}
+
+.copyright {
+	color: white;
+	font-size: 14px;
+	margin: 15px 0px 0px;
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label{
+	display: block;
+	font-size: 20px;
+	margin: 0px 0px 10px;
+}
+
+form input, form textarea {
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px 25px;
+	width:  50%;
+}
+
+.send-info {
+	width: 40%;
+	background: orange;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 18px;
+	font-weight: bold;
+	transition: 1s all;
+}
+
+.send-info:hover {
+	background: red;
+	transform: scale(1.2);
+}
+
+
+@media screen and (max-width: 940px){
+    main{
+        width: auto;
+    }
+	nav li {
+		display: inline-block;
+		margin-left: 8px;
+		width: auto;
+	}
+	nav a {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 15px;
+		text-decoration: none;
+		color: #000000;
+	}
+    .animais {
+    	width: auto;
+    }
+	.animais li h2{
+		font-size: 80%;
+		text-align: center;
+	}
+    .animais img{
+        width: 110%;
+		padding: 5px 0px;
+    }
+	.animais p{
+		padding: 5px 0;
+	}
+	
+	.animais li{
+		display: inline-block;
+		text-align: center;
+		width:  28%;
+		vertical-align: top;
+		margin: 1.5%;
+		padding: 20px 20px;
+		box-sizing: border-box;
+		border: 2px solid #000;
+		border-radius: 15px;
+	}
+   }
